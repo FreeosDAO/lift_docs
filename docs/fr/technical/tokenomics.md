@@ -1,0 +1,16 @@
+# Tokenomics
+
+## PROMO : Récompenses basées sur la contribution
+Les utilisateurs gagnent des jetons PROMO en...
+
+## LIFT : Jeton utilitaire et de gouvernance
+Les jetons LIFT fournissent...
+
+## Frais de création et utilité de base
+Notre structure de frais garantit...
+
+## Allocation et calendriers de déblocage
+La distribution des jetons suit...
+
+## Contrôles adaptatifs de l'offre
+Gestion dynamique de l'offre...

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lift Cash Documentation</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+  </head>
+  <body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script>
+      new Docute({
+        target: '#docute',
+        title: 'Lift Cash Documentation',
+        sourcePath: '/docs',
+        darkThemeToggler: true,
+        detectSystemDarkTheme: true,
+        nav: [
+          { title: 'Home', link: '/' },
+          { title: 'GitHub', link: 'https://github.com/ICP-hub/liftcash' }
+        ],
+        sidebar: [
+          {
+            title: 'Overview',
+            children: [
+              { title: 'Executive Summary', link: '/overview/executive-summary' },
+              { title: 'Introduction', link: '/overview/introduction' },
+              { title: 'Ecosystem', link: '/overview/ecosystem' }
+            ]
+          },
+          {
+            title: 'Governance',
+            children: [
+              { title: 'DAO Structure', link: '/governance/dao' },
+              { title: 'Voting System', link: '/governance/voting' },
+              { title: 'Future Features', link: '/governance/future' }
+            ]
+          },
+          {
+            title: 'Token System',
+            children: [
+              { title: 'PROMO Token', link: '/tokens/promo' },
+              { title: 'LIFT Token', link: '/tokens/lift' },
+              { title: 'Tokenomics', link: '/tokens/economics' },
+              { title: 'Grants and Loans', link: '/tokens/grants' }
+            ]
+          },
+          {
+            title: 'Leveraging AI',
+            children: [
+              { title: 'Implementation', link: '/ai/implementation' },
+              { title: 'Use Cases', link: '/ai/use-cases' }
+            ]
+          },
+          {
+            title: 'Strategy',
+            children: [
+              { title: 'Ecosystem Growth', link: '/strategy/ecosystem-growth' },
+              { title: 'Comparative Analysis', link: '/strategy/analysis' },
+              { title: 'Roadmap', link: '/strategy/roadmap' },
+              { title: 'Community Growth', link: '/strategy/community' }
+            ]
+          },
+          {
+            title: 'Conclusion',
+            children: [
+              { title: 'Impact', link: '/conclusion/impact' },
+              { title: 'Final Vision', link: '/conclusion/vision' }
+            ]
+          }
+        ],
+        overrides: {
+          '/': {
+            language: 'English'
+          },
+          '/fr/': {
+            language: 'Français',
+            sidebar: [
+              {
+                title: 'Aperçu',
+                children: [
+                  { title: 'Résumé exécutif', link: '/fr/overview/executive-summary' },
+                  { title: 'Introduction', link: '/fr/overview/introduction' },
+                  { title: 'Écosystème', link: '/fr/overview/ecosystem' }
+                ]
+              },
+              {
+                title: 'Gouvernance',
+                children: [
+                  { title: 'Structure DAO', link: '/fr/governance/dao' },
+                  { title: 'Système de vote', link: '/fr/governance/voting' },
+                  { title: 'Fonctionnalités futures', link: '/fr/governance/future' }
+                ]
+              },
+              {
+                title: 'Système de jetons',
+                children: [
+                  { title: 'Jeton PROMO', link: '/fr/tokens/promo' },
+                  { title: 'Jeton LIFT', link: '/fr/tokens/lift' },
+                  { title: 'Tokenomics', link: '/fr/tokens/economics' },
+                  { title: 'Subventions et Prêts', link: '/fr/tokens/grants' }
+                ]
+              },
+              {
+                title: 'Exploiter l’IA',
+                children: [
+                  { title: 'Implémentation', link: '/fr/ai/implementation' },
+                  { title: 'Cas d\'utilisation', link: '/fr/ai/use-cases' }
+                ]
+              },
+              {
+                title: 'Stratégie',
+                children: [
+                  { title: 'Croissance de l’écosystème', link: '/fr/strategy/ecosystem-growth' },
+                  { title: 'Analyse comparative', link: '/fr/strategy/analysis' },
+                  { title: 'Feuille de route', link: '/fr/strategy/roadmap' },
+                  { title: 'Croissance communautaire', link: '/fr/strategy/community' }
+                ]
+              },
+              {
+                title: 'Conclusion',
+                children: [
+                  { title: 'Impact', link: '/fr/conclusion/impact' },
+                  { title: 'Vision finale', link: '/fr/conclusion/vision' }
+                ]
+              }
+            ]
+          },
+          '/zh-TW/': {
+            language: '繁體中文',
+            sidebar: [
+              {
+                title: '概述',
+                children: [
+                  { title: '執行摘要', link: '/zh-TW/overview/executive-summary' },
+                  { title: '介紹', link: '/zh-TW/overview/introduction' },
+                  { title: '生態系統', link: '/zh-TW/overview/ecosystem' }
+                ]
+              },
+              {
+                title: '治理',
+                children: [
+                  { title: 'DAO 結構', link: '/zh-TW/governance/dao' },
+                  { title: '投票系統', link: '/zh-TW/governance/voting' },
+                  { title: '未來功能', link: '/zh-TW/governance/future' }
+                ]
+              },
+              {
+                title: '代幣系統',
+                children: [
+                  { title: 'PROMO 代幣', link: '/zh-TW/tokens/promo' },
+                  { title: 'LIFT 代幣', link: '/zh-TW/tokens/lift' },
+                  { title: '代幣經濟學', link: '/zh-TW/tokens/economics' },
+                  { title: '補助金與貸款', link: '/zh-TW/tokens/grants' }
+                ]
+              },
+              {
+                title: '利用人工智慧',
+                children: [
+                  { title: '實施', link: '/zh-TW/ai/implementation' },
+                  { title: '使用案例', link: '/zh-TW/ai/use-cases' }
+                ]
+              },
+              {
+                title: '策略',
+                children: [
+                  { title: '生態系統增長', link: '/zh-TW/strategy/ecosystem-growth' },
+                  { title: '比較分析', link: '/zh-TW/strategy/analysis' },
+                  { title: '路線圖', link: '/zh-TW/strategy/roadmap' },
+                  { title: '社區增長', link: '/zh-TW/strategy/community' }
+                ]
+              },
+              {
+                title: '結論',
+                children: [
+                  { title: '影響', link: '/zh-TW/conclusion/impact' },
+                  { title: '最終願景', link: '/zh-TW/conclusion/vision' }
+                ]
+              }
+            ]
+          },
+          '/es/': {
+            language: 'Español',
+            sidebar: [
+              {
+                title: 'Visión General',
+                children: [
+                  { title: 'Resumen Ejecutivo', link: '/es/overview/executive-summary' },
+                  { title: 'Introducción', link: '/es/overview/introduction' },
+                  { title: 'Ecosistema', link: '/es/overview/ecosystem' }
+                ]
+              },
+              {
+                title: 'Gobernanza',
+                children: [
+                  { title: 'Estructura DAO', link: '/es/governance/dao' },
+                  { title: 'Sistema de Votación', link: '/es/governance/voting' },
+                  { title: 'Características Futuras', link: '/es/governance/future' }
+                ]
+              },
+              {
+                title: 'Sistema de Tokens',
+                children: [
+                  { title: 'Token PROMO', link: '/es/tokens/promo' },
+                  { title: 'Token LIFT', link: '/es/tokens/lift' },
+                  { title: 'Tokenomics', link: '/es/tokens/economics' },
+                  { title: 'Subvenciones y Préstamos', link: '/es/tokens/grants' }
+                ]
+              },
+              {
+                title: 'Aprovechando la IA',
+                children: [
+                  { title: 'Implementación', link: '/es/ai/implementation' },
+                  { title: 'Casos de Uso', link: '/es/ai/use-cases' }
+                ]
+              },
+              {
+                title: 'Estrategia',
+                children: [
+                  { title: 'Crecimiento del ecosistema', link: '/es/strategy/ecosystem-growth' },
+                  { title: 'Análisis Comparativo', link: '/es/strategy/analysis' },
+                  { title: 'Hoja de Ruta', link: '/es/strategy/roadmap' },
+                  { title: 'Crecimiento Comunitario', link: '/es/strategy/community' }
+                ]
+              },
+              {
+                title: 'Conclusión',
+                children: [
+                  { title: 'Impacto', link: '/es/conclusion/impact' },
+                  { title: 'Visión Final', link: '/es/conclusion/vision' }
+                ]
+              }
+            ]
+          },
+          '/pt-BR/': {
+            language: 'Português (Brasil)',
+            sidebar: [
+              {
+                title: 'Visão Geral',
+                children: [
+                  { title: 'Resumo Executivo', link: '/pt-BR/overview/executive-summary' },
+                  { title: 'Introdução', link: '/pt-BR/overview/introduction' },
+                  { title: 'Ecossistema', link: '/pt-BR/overview/ecosystem' }
+                ]
+              },
+              {
+                title: 'Governança',
+                children: [
+                  { title: 'Estrutura DAO', link: '/pt-BR/governance/dao' },
+                  { title: 'Sistema de Votação', link: '/pt-BR/governance/voting' },
+                  { title: 'Recursos Futuros', link: '/pt-BR/governance/future' }
+                ]
+              },
+              {
+                title: 'Sistema de Tokens',
+                children: [
+                  { title: 'Token PROMO', link: '/pt-BR/tokens/promo' },
+                  { title: 'Token LIFT', link: '/pt-BR/tokens/lift' },
+                  { title: 'Tokenomics', link: '/pt-BR/tokens/economics' },
+                  { title: 'Subsídios e Empréstimos', link: '/pt-BR/tokens/grants' }
+                ]
+              },
+              {
+                title: 'Aproveitando a IA',
+                children: [
+                  { title: 'Implementação', link: '/pt-BR/ai/implementation' },
+                  { title: 'Casos de Uso', link: '/pt-BR/ai/use-cases' }
+                ]
+              },
+              {
+                title: 'Estratégia',
+                children: [
+                  { title: 'Crescimento do ecossistema', link: '/pt-BR/strategy/ecosystem-growth' },
+                  { title: 'Análise Comparativa', link: '/pt-BR/strategy/analysis' },
+                  { title: 'Roteiro', link: '/pt-BR/strategy/roadmap' },
+                  { title: 'Crescimento da Comunidade', link: '/pt-BR/strategy/community' }
+                ]
+              },
+              {
+                title: 'Conclusão',
+                children: [
+                  { title: 'Impacto', link: '/pt-BR/conclusion/impact' },
+                  { title: 'Visão Final', link: '/pt-BR/conclusion/vision' }
+                ]
+              }
+            ]
+          },
+          '/zh/': {
+            language: '简体中文',
+            sidebar: [
+              {
+                title: '概述',
+                children: [
+                  { title: '执行摘要', link: '/zh/overview/executive-summary' },
+                  { title: '介绍', link: '/zh/overview/introduction' },
+                  { title: '生态系统', link: '/zh/overview/ecosystem' }
+                ]
+              },
+              {
+                title: '治理',
+                children: [
+                  { title: 'DAO 结构', link: '/zh/governance/dao' },
+                  { title: '投票系统', link: '/zh/governance/voting' },
+                  { title: '未来功能', link: '/zh/governance/future' }
+                ]
+              },
+              {
+                title: '代币系统',
+                children: [
+                  { title: 'PROMO 代币', link: '/zh/tokens/promo' },
+                  { title: 'LIFT 代币', link: '/zh/tokens/lift' },
+                  { title: '代币经济学', link: '/zh/tokens/economics' },
+                  { title: '补助金与贷款', link: '/zh/tokens/grants' }
+                ]
+              },
+              {
+                title: '利用人工智能',
+                children: [
+                  { title: '实施', link: '/zh/ai/implementation' },
+                  { title: '使用案例', link: '/zh/ai/use-cases' }
+                ]
+              },
+              {
+                title: '策略',
+                children: [
+                  { title: '生态系统增长', link: '/zh/strategy/ecosystem-growth' },
+                  { title: '比较分析', link: '/zh/strategy/analysis' },
+                  { title: '路线图', link: '/zh/strategy/roadmap' },
+                  { title: '社区增长', link: '/zh/strategy/community' }
+                ]
+              },
+              {
+                title: '结论',
+                children: [
+                  { title: '影响', link: '/zh/conclusion/impact' },
+                  { title: '最终愿景', link: '/zh/conclusion/vision' }
+                ]
+              }
+            ]
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
