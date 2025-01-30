@@ -12,6 +12,7 @@ const SponsorIcon = {
 
 new Docute({
   target: 'app',
+  logo: '',
   title: 'Docute',
   highlight: ['typescript', 'bash', 'json', 'markdown'],
   plugins: [
