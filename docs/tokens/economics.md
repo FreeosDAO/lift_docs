@@ -3,21 +3,39 @@ Lift Cash’s token distribution and vesting mechanisms are designed to balance 
 
 ### Token Allocation Breakdown (as a Percentage of Max Supply)
 
-| **Category**               | **Percentage of Max Supply** | **Details**                                                                                     |
-|--||-|
-| **Token Sale**              | 8%                          | Distributed via the **SNS Launchpad**, allocated as **staked neurons** with varying dissolve delays. |
-| **DAO Treasury**            | 9%                          | **2% available at launch**, with **7% gradually allocated over time via dApp rewards tied to governance participation.** |
-| **SNS Rewards**             | 22%                         | Dedicated to users staking LIFT tokens in the SNS DAO, distributed as **staked neurons**.        |
-| **dApp Rewards**            | 50%                         | Rewarding governance participation through surveys and votes, convertible from PROMO tokens.      |
-| **Freeos Community Airdrop**| 1.84%                       | Staked LIFT neurons swapped from FREEOS tokens to ensure continuity between ecosystems.           |
-| **Team**                    | 5.12%                       | Allocated as staked neurons with a **three-year vesting period** and a **12-month cliff** to align with long-term growth. |
-| **Investors**               | 4.04%                       | Staked neurons with structured dissolve delays to promote alignment with the project’s success.   |
+| Category           | Percentage of Max Supply | Details                                                                 |
+|--------------------|--------------------------|-------------------------------------------------------------------------|
+| Remaining Supply   | 59%                      | Held in reserve for future reward allocation (SNS + dApp rewards) and DAO governance decisions. |
+| Freeos Airdrop     | 15%                      | Original Freeos community airdrop allocation with vesting and dissolve delays. |
+| Investors          | 9%                       | Allocated to early investors with vesting and dissolve delays.          |
+| Launch Sale        | 6%                       | Public token sale allocation, through SNS launchpad.                   |
+| Team               | 4%                       | Allocated with vesting and dissolve delays.                             |
+| Founder            | 3%                       | Long-term aligned founder allocation with vesting and dissolve delays. |
+| Referral           | 2%                       | Rewards for user acquisition via referral program.                      |
+| Liquidity          | 2%                       | Used for exchange listings and ensuring tradable market liquidity.      |
 
-### Vesting Schedules
+### Vesting Schedules (SNS Neuron Model)
 
-- **Team and Advisors**: Subject to a **three-year vesting period** with a **12-month cliff** to ensure incentives align with long-term ecosystem growth. 
-- **SNS Tokens**: Distributed as **staked neurons**, following structured dissolve delays to ensure gradual release of tokens into the circulating supply. 
-- **Investor Tokens**: Allocated as staked neurons with dissolve delays to ensure alignment with long-term project goals.
+**Founders, Team and Advisors**
+
+- **Structure:** Tokens are allocated into a basket of 4 neurons with staggered dissolve delays of 12, 24, 36, and 48 months.
+- **Cliff (Initial Lock Period):** 12 months — no tokens can be dissolved during this period.
+- **Vesting (Gradual Unlock):** After the cliff, tokens unlock in equal portions over the remaining schedule at 12, 24, 36, and 48 months.
+- **Purpose:** Ensures long-term commitment and alignment with project growth.
+
+**Investor Tokens**
+- **Structure:** Tokens are distributed as a basket of 4 neurons with staggered dissolve delays of 6, 12, 18, and 24 months.
+- **Cliff:** 6 months — tokens remain locked and cannot be dissolved.
+- **Vesting:** After the cliff, tokens unlock in equal portions at 6, 12, 18, and 24 months.
+- **Purpose:** Aligns investor incentives with long-term project success.
+
+**Community Airdrop**
+- **Structure:** Tokens are distributed as a basket of 5 neurons with staggered dissolve delays of 3, 6, 9, and 12 months.
+- **Cliff:** Immediate partial unlock — a portion of tokens is available at distribution, the rest is locked.
+- **Vesting:** Locked tokens unlock in equal portions at each scheduled dissolve delay.
+- **Purpose:** Encourages meaningful community engagement and prevents rapid sell-offs.
+
+*Note: In the SNS neuron model, "dissolve delay" refers to the period a neuron must wait before its tokens can be unlocked. "Cliff" denotes the initial period during which no tokens can be unlocked, ensuring commitment from the token holder.*
 
 ### Dynamic Supply Mechanics
 

@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Lift Cash Documentation</title>
     <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/lift_logo_orange_small.png">
+    <link rel="shortcut icon" type="image/png" href="assets/lift_logo_orange_small.png">
+    <script>
+      // Fix for "undefined" in document title
+      window.addEventListener('DOMContentLoaded', function() {
+        // Set title initially
+        document.title = "Lift Cash Documentation";
+        
+        // Keep checking/setting the title
+        setInterval(function() {
+          if (document.title.includes("undefined")) {
+            document.title = "Lift Cash Documentation";
+          }
+        }, 100);
+      });
+    </script>
   </head>
   <body>
     <div id="docute"></div>
@@ -17,6 +34,8 @@
         sourcePath: '/docs',
         darkThemeToggler: true,
         detectSystemDarkTheme: true,
+        // Fix the "undefined" in tab title issue
+        routerMode: 'history',
         nav: [
           { title: 'Home', link: 'https://lift.cash' },
           { title: 'GitHub', link: 'https://github.com/ICP-hub/liftcash' }
